@@ -1,0 +1,12 @@
+.box {
+  border: 1px solid #13b654;
+  padding: 70px;
+  /* additional styling for the container or box */
+  width: 50%;
+  height: 70%;
+}
+.container {
+  display: flex;
+  justify-content: center; /* or any other desired alignment */
+
+}
