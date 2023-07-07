@@ -30,4 +30,10 @@ export class TaskService {
     return this.http.put<Task>(url, task, httpOptions);
   }
 
+  addTask(task : Task): Observable<Task>{
+    const httpOptions = {
+      headers: new HttpHeaders({'Content-Type': 'application/json'})
+    }
+    return this.http.post<Task>(this.apiUrl, task, httpOptions);
+  }
 }
